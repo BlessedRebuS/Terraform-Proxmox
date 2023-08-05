@@ -91,3 +91,9 @@ variable "ipv4_address" {
     type        = string
     description = "value of the ipv4 address for the network interface"
 }
+
+variable "firewall" {
+    type        = bool
+    default     = true
+    description = "Enable firewall for the LXC container"
+}

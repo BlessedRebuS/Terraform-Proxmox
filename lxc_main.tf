@@ -60,6 +60,7 @@ resource "proxmox_lxc" "basic" {
     gw     = var.gateway_address
     ip     = var.ipv4_address
     ip6    = "auto"
+    firewall = var.firewall
   }
 
   # a bind mountpoint requires high privileges. use the root@pam password authentication to work
